@@ -4,8 +4,8 @@
 replicaCount: 1
 
 # username, team, and passkey are all optional fields
-username: ""
-team: ""
+username: "BigRedS"
+team: "80210"
 passkey: ""
 
 image:

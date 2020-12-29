@@ -13,6 +13,6 @@ spec:
     ref: master
   values:
     image:
-      repository: brannon/folding-at-home
+      repository: johnktims/folding-at-home:latest
       tag: latest
     replicaCount: 3
