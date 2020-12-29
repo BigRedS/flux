@@ -1,0 +1,18 @@
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: folding-at-home
+  namespace: folding-at-home
+  annotations:
+    fluxcd.io/automated: "true"
+spec:
+  releaseName: folding-at-home
+  chart:
+    git: git@github.com:BigRedS/flux
+    path: charts/folding-at-home
+    ref: master
+  values:
+    image:
+      repository: brannon/folding-at-home
+      tag: latest
+    replicaCount: 3
