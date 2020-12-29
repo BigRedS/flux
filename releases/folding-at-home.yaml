@@ -15,5 +15,5 @@ spec:
   values:
     image:
       repository: johnktims/folding-at-home
-      tag: 7.6.13
-    replicaCount: 5
+      tag: latest
+    replicaCount: 3
