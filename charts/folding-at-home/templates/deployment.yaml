@@ -29,6 +29,8 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /tmp/fahclient
+	    - name: etc-fahclient
+	      mountPath: /etc/fahclient
           command:
             - sh
             - "-c"
@@ -40,6 +42,8 @@ spec:
               FAHClient --config /etc/fahclient/config.xml --config-rotate=false
               EOF
       volumes:
+        - name: etc-volume
+	  emptyDir: {}
         - name: config-volume
           configMap:
             # Provide the name of the ConfigMap containing the files you want
