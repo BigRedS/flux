@@ -29,8 +29,8 @@ spec:
           volumeMounts:
             - name: config-volume
               mountPath: /tmp/fahclient
-	    - name: etc-fahclient
-	      mountPath: /etc/fahclient
+            - name: etc-fahclient
+              mountPath: /etc/fahclient
           command:
             - sh
             - "-c"
@@ -43,7 +43,7 @@ spec:
               EOF
       volumes:
         - name: etc-volume
-	  emptyDir: {}
+          emptyDir: {}
         - name: config-volume
           configMap:
             # Provide the name of the ConfigMap containing the files you want
