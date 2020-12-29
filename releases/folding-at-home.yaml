@@ -13,6 +13,6 @@ spec:
     ref: master
   values:
     image:
-      repository: johnktims/folding-at-home:latest
+      repository: johnktims/folding-at-home
       tag: latest
     replicaCount: 3
