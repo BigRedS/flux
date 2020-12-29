@@ -1,3 +1,4 @@
+---
 apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
@@ -14,5 +15,5 @@ spec:
   values:
     image:
       repository: johnktims/folding-at-home
-      tag: latest
+      tag: 7.6.13
     replicaCount: 3
